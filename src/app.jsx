@@ -19,6 +19,6 @@ function App() {
 //빈 배열을 인자로 넣으면 mount가 됐을 때만 useEffect를 호출한다
 //만약 state들을 넣으면 그 state들이 update 될 때 마다 콜백함수가 불린다.
   }, [])
-  return <VideoList videos={videos}/>
+  return <VideoList id={videos.id} videos={videos}/>
 }
 export default App;
