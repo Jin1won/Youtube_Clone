@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './video_detail.module.css';
 
-const VideoDetail = props => (
+const VideoDetail = memo(props => (
     <section className={styles.detail}>
         <iframe
             className={styles.video}
@@ -17,6 +17,6 @@ const VideoDetail = props => (
         <h3>{props.video.snippet.channelTitle}</h3>
         <pre className={styles.description}>{props.video.snippet.description}</pre>
     </section>
-);
+));
 
 export default VideoDetail;
