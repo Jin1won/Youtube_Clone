@@ -1,4 +1,4 @@
-class Youtube {
+class YoutubeFetch {
   constructor(key) {
     this.key = key;
     this.getRequestOptions = {
