@@ -3,7 +3,7 @@ import styles from './video_item.module.css';
 
 const VideoItem = memo(props => {
     const displayType = props.display === 'list' ? styles.list : styles.grid;
-    // app.jsx에서 함수 선언이 아닌 함수를 선언해서 변수에 할당해주었기 때문에 바로 onClick={props.onVideoClick(props.video)}같은 방식으로 선언이 안된다!
+    //onClick={onVideoClick(props.video)}이런식으로 전달하면 onVideoClick함수가 실행되는 것이 아니라 함수가 실행된 "결과값"이 전달된다.
     //이런 식으로 쓰면 onClick = {onVideoClick} 이런식으로 호출 가능!
     // const onVideoClick = () => {
     //     props.onVideoClick(props.video);
